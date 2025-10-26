@@ -1,7 +1,7 @@
 [gd_scene load_steps=27 format=3 uid="uid://dlfwup6cy8cno"]
 
 [ext_resource type="Texture2D" uid="uid://bg2quugodxjfh" path="res://assets/addassets/Doors1stylesheet.png" id="1_0phs7"]
-[ext_resource type="Script" uid="uid://ciq52dhpn4ty7" path="res://mapa/door.gd" id="1_ytpji"]
+[ext_resource type="Script" uid="uid://ciq52dhpn4ty7" path="res://scripts/door.gd" id="1_ytpji"]
 [ext_resource type="Texture2D" uid="uid://12qksa0m4ayg" path="res://assets/addassets/Doors2stylesheet.png" id="2_50cdl"]
 [ext_resource type="Texture2D" uid="uid://b6chkwls0w26l" path="res://assets/addassets/Doors3stylesheet.png" id="3_y5njw"]
 
@@ -90,7 +90,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ll3j0")
 }],
-"loop": false,
+"loop": true,
 "name": &"close",
 "speed": 5.0
 }, {
