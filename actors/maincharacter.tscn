@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://b72k3gpclj2in"]
 
-[ext_resource type="Script" uid="uid://xb1j4r2drb5y" path="res://actors/maincharacter.gd" id="1_0aigr"]
+[ext_resource type="Script" uid="uid://xb1j4r2drb5y" path="res://scripts/maincharacter.gd" id="1_0aigr"]
 [ext_resource type="Texture2D" uid="uid://dihbwag2bm41n" path="res://assets/WitchFlying.png" id="1_l7kkk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l7kkk"]
@@ -123,4 +123,4 @@ scale = Vector2(0.5266927, 0.37744138)
 sprite_frames = SubResource("SpriteFrames_crxhg")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.12855622
+frame_progress = 0.49495155

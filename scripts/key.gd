@@ -5,11 +5,10 @@ extends Area2D
 
 func _on_body_entered(body: Node) -> void:
 	if body.is_in_group(player_group):
-		# Verifica se o jogador tem a variável
 		if flag_name in body:
 			body.set(flag_name, true)
 			print(flag_name, " = ", body.get(flag_name))
 		else:
-			print("⚠️ O jogador não tem a variável ", flag_name)
+			print("O jogador não tem a variável ", flag_name)
 
-		queue_free()  # Remove o item da cena
+		queue_free() 
