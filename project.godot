@@ -23,6 +23,7 @@ window/size/viewport_height=650
 [global_group]
 
 player="é um player =/"
+command_ui=""
 
 [input]
 

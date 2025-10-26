@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=3 uid="uid://cbi62mcf506tp"]
+
+[ext_resource type="PackedScene" uid="uid://b72k3gpclj2in" path="res://actors/maincharacter.tscn" id="1_0f027"]
+[ext_resource type="Script" uid="uid://b6w2yci6m6lod" path="res://CommandUI.gd" id="2_2c62f"]
+[ext_resource type="Texture2D" uid="uid://barkwt3rjpsvt" path="res://assets/setas/setaCima.png" id="2_hq1ik"]
+[ext_resource type="Texture2D" uid="uid://dxfs66u07x7o8" path="res://assets/setas/setaBaixo.png" id="3_nfk4m"]
+[ext_resource type="Texture2D" uid="uid://iauds86suwcy" path="res://assets/setas/setaEsquerda.png" id="4_66tet"]
+[ext_resource type="Texture2D" uid="uid://c5fyip4ex0ho2" path="res://assets/setas/setaDireita.png" id="5_7ycvg"]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="maincharacter" parent="." instance=ExtResource("1_0f027")]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="PanelContainer" type="PanelContainer" parent="UI"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 680.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="CommandPanel" type="HBoxContainer" parent="UI/PanelContainer" groups=["command_ui"]]
+layout_mode = 2
+theme_override_constants/separation = 10
+script = ExtResource("2_2c62f")
+arrow_up = ExtResource("2_hq1ik")
+arrow_down = ExtResource("3_nfk4m")
+arrow_left = ExtResource("4_66tet")
+arrow_right = ExtResource("5_7ycvg")
