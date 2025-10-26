@@ -3,6 +3,11 @@ extends CharacterBody2D
 @export var speed: float = 300.0
 var move_dir: Vector2 = Vector2.ZERO
 
+var has_key: bool = false 
+
+func _ready():
+	add_to_group("player")  
+
 func _physics_process(delta: float) -> void:
 	if move_dir == Vector2.ZERO:
 		move_dir = get_input_direction()
