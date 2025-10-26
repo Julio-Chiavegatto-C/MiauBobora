@@ -1,7 +1,7 @@
 [gd_scene load_steps=17 format=3 uid="uid://b72k3gpclj2in"]
 
 [ext_resource type="Script" uid="uid://xb1j4r2drb5y" path="res://scripts/maincharacter.gd" id="1_0aigr"]
-[ext_resource type="Texture2D" uid="uid://dihbwag2bm41n" path="res://assets/WitchFlying.png" id="1_l7kkk"]
+[ext_resource type="Texture2D" uid="uid://dihbwag2bm41n" path="res://mapa/WitchFlying.png" id="1_l7kkk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l7kkk"]
 size = Vector2(17, 18)

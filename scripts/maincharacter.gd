@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed: float = 300.0
+@export var speed: float = 150.0
 @onready var command_ui: Node = get_tree().get_first_node_in_group("command_ui")
 
 var max_commands: int = 0
@@ -18,17 +18,17 @@ func _ready() -> void:
 
 	match level_number:
 		1:
-			max_commands = 20
+			max_commands = 4
 		2:
-			max_commands = 20
+			max_commands = 6
 		3:
-			max_commands = 20
+			max_commands = 11
 		4:
-			max_commands = 20
+			max_commands = 14
 		5:
-			max_commands = 20
+			max_commands = 16
 		6:
-			max_commands = 20
+			max_commands = 10
 
 func _physics_process(delta: float) -> void:
 	if is_executing:

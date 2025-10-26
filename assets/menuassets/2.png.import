@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dihbwag2bm41n"
-path="res://.godot/imported/WitchFlying.png-374e4d261bef0400e2c854df7cb74338.ctex"
+uid="uid://cluhkfuahitj5"
+path="res://.godot/imported/2.png-464c2b6243cbe4283fcf84132df39e83.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/WitchFlying.png"
-dest_files=["res://.godot/imported/WitchFlying.png-374e4d261bef0400e2c854df7cb74338.ctex"]
+source_file="res://assets/menuassets/2.png"
+dest_files=["res://.godot/imported/2.png-464c2b6243cbe4283fcf84132df39e83.ctex"]
 
 [params]
 

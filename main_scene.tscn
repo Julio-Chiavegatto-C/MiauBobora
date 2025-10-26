@@ -1,13 +1,16 @@
-[gd_scene load_steps=7 format=3 uid="uid://cbi62mcf506tp"]
+[gd_scene load_steps=9 format=3 uid="uid://cbi62mcf506tp"]
 
 [ext_resource type="PackedScene" uid="uid://b72k3gpclj2in" path="res://actors/maincharacter.tscn" id="1_0f027"]
+[ext_resource type="Script" uid="uid://cgp8gp3gp67kv" path="res://main_scene_sound.gd" id="1_66tet"]
 [ext_resource type="Script" uid="uid://b6w2yci6m6lod" path="res://CommandUI.gd" id="2_2c62f"]
-[ext_resource type="Texture2D" uid="uid://barkwt3rjpsvt" path="res://assets/setas/setaCima.png" id="2_hq1ik"]
-[ext_resource type="Texture2D" uid="uid://dxfs66u07x7o8" path="res://assets/setas/setaBaixo.png" id="3_nfk4m"]
-[ext_resource type="Texture2D" uid="uid://iauds86suwcy" path="res://assets/setas/setaEsquerda.png" id="4_66tet"]
-[ext_resource type="Texture2D" uid="uid://c5fyip4ex0ho2" path="res://assets/setas/setaDireita.png" id="5_7ycvg"]
+[ext_resource type="Texture2D" uid="uid://o5enjee5b7b6" path="res://assets/setas/up.png" id="3_hq1ik"]
+[ext_resource type="Texture2D" uid="uid://cwpo8y72xior4" path="res://assets/setas/down.png" id="4_nfk4m"]
+[ext_resource type="Texture2D" uid="uid://cv6cyef00j8qq" path="res://assets/setas/left.png" id="5_66tet"]
+[ext_resource type="Texture2D" uid="uid://yiqcbckkhde3" path="res://assets/setas/right.png" id="6_7ycvg"]
+[ext_resource type="AudioStream" uid="uid://rq80l4bnuq4n" path="res://assets/sounds/music.mp3" id="8_7ycvg"]
 
 [node name="MainScene" type="Node2D"]
+script = ExtResource("1_66tet")
 
 [node name="maincharacter" parent="." instance=ExtResource("1_0f027")]
 
@@ -26,7 +29,11 @@ grow_horizontal = 2
 layout_mode = 2
 theme_override_constants/separation = 10
 script = ExtResource("2_2c62f")
-arrow_up = ExtResource("2_hq1ik")
-arrow_down = ExtResource("3_nfk4m")
-arrow_left = ExtResource("4_66tet")
-arrow_right = ExtResource("5_7ycvg")
+arrow_up = ExtResource("3_hq1ik")
+arrow_down = ExtResource("4_nfk4m")
+arrow_left = ExtResource("5_66tet")
+arrow_right = ExtResource("6_7ycvg")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_7ycvg")
+parameters/looping = true

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://barkwt3rjpsvt"
-path="res://.godot/imported/setaCima.png-51f1a538c3c1296ce4578a76eb62129a.ctex"
+uid="uid://dlpftr0rcpcq7"
+path="res://.godot/imported/6.png-4e084023cb62265f631b1c7521a3e1a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/setas/setaCima.png"
-dest_files=["res://.godot/imported/setaCima.png-51f1a538c3c1296ce4578a76eb62129a.ctex"]
+source_file="res://assets/menuassets/6.png"
+dest_files=["res://.godot/imported/6.png-4e084023cb62265f631b1c7521a3e1a9.ctex"]
 
 [params]
 

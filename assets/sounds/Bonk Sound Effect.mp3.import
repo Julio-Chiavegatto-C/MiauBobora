@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bvpgc2n1ac5hl"
+path="res://.godot/imported/Bonk Sound Effect.mp3-e74f370bf63870377822daaab06a0e6f.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/Bonk Sound Effect.mp3"
+dest_files=["res://.godot/imported/Bonk Sound Effect.mp3-e74f370bf63870377822daaab06a0e6f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

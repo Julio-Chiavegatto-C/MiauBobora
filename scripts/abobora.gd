@@ -23,3 +23,4 @@ func go_to_next_level() -> void:
 		get_tree().change_scene_to_file(next_level_path)
 	else:
 		print("🏁 Última fase!")
+		

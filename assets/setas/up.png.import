@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxfs66u07x7o8"
-path="res://.godot/imported/setaBaixo.png-dae7166a4cef4e27a266667fbe7ff0ea.ctex"
+uid="uid://o5enjee5b7b6"
+path="res://.godot/imported/up.png-bccfd57b0e5632bf0b948e4661c59c4d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/setas/setaBaixo.png"
-dest_files=["res://.godot/imported/setaBaixo.png-dae7166a4cef4e27a266667fbe7ff0ea.ctex"]
+source_file="res://assets/setas/up.png"
+dest_files=["res://.godot/imported/up.png-bccfd57b0e5632bf0b948e4661c59c4d.ctex"]
 
 [params]
 

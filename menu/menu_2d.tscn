@@ -1,0 +1,60 @@
+[gd_scene load_steps=13 format=3 uid="uid://ch5cdjyciefbs"]
+
+[ext_resource type="Script" uid="uid://baiyqmannvwsw" path="res://menu/menu_2d.gd" id="1_cse2g"]
+[ext_resource type="Texture2D" uid="uid://b1fg173psrx8f" path="res://assets/menuassets/1.png" id="1_fwo6l"]
+[ext_resource type="Texture2D" uid="uid://cluhkfuahitj5" path="res://assets/menuassets/2.png" id="2_e7kvy"]
+[ext_resource type="Texture2D" uid="uid://cp02y66lk6nx2" path="res://assets/menuassets/3.png" id="3_7g27q"]
+[ext_resource type="Texture2D" uid="uid://bug75ptmcfav6" path="res://assets/menuassets/8.png" id="3_xrwdd"]
+[ext_resource type="Texture2D" uid="uid://bkb1q1gq0xwbp" path="res://assets/menuassets/4.png" id="4_cse2g"]
+[ext_resource type="Texture2D" uid="uid://0k2tajk4pmno" path="res://assets/menuassets/7.png" id="4_snkyb"]
+[ext_resource type="Texture2D" uid="uid://do7ac3sg3fyjn" path="res://assets/menuassets/5.png" id="5_0uvni"]
+[ext_resource type="Texture2D" uid="uid://dlpftr0rcpcq7" path="res://assets/menuassets/6.png" id="6_ym4wb"]
+[ext_resource type="AudioStream" uid="uid://rq80l4bnuq4n" path="res://assets/sounds/music.mp3" id="10_7g27q"]
+[ext_resource type="Script" uid="uid://kb2j3o8a1j8b" path="res://menu/texture_button.gd" id="10_b47li"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_s4ap2"]
+frames = 6
+speed_scale = 4.6
+frame_0/texture = ExtResource("1_fwo6l")
+frame_1/texture = ExtResource("2_e7kvy")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("3_7g27q")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("4_cse2g")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("5_0uvni")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("6_ym4wb")
+frame_5/duration = 1.0
+
+[node name="menu2d" type="Node2D"]
+script = ExtResource("1_cse2g")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_right = 800.0
+offset_bottom = 650.0
+texture = SubResource("AnimatedTexture_s4ap2")
+
+[node name="TextureButton" type="TextureButton" parent="Control"]
+layout_mode = 0
+offset_left = 555.0
+offset_top = 303.0
+offset_right = 782.0
+offset_bottom = 361.0
+texture_normal = ExtResource("4_snkyb")
+texture_hover = ExtResource("3_xrwdd")
+stretch_mode = 0
+script = ExtResource("10_b47li")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_7g27q")
+parameters/looping = true
+
+[connection signal="pressed" from="Control/TextureButton" to="Control/TextureButton" method="_on_pressed"]

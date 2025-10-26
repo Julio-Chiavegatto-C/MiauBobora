@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://iauds86suwcy"
-path="res://.godot/imported/setaEsquerda.png-38df5222810ac19b876a3bef7bb062bd.ctex"
+uid="uid://b1fg173psrx8f"
+path="res://.godot/imported/1.png-b10adae49f0af7ec280410d119ffaf7b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/setas/setaEsquerda.png"
-dest_files=["res://.godot/imported/setaEsquerda.png-38df5222810ac19b876a3bef7bb062bd.ctex"]
+source_file="res://assets/menuassets/1.png"
+dest_files=["res://.godot/imported/1.png-b10adae49f0af7ec280410d119ffaf7b.ctex"]
 
 [params]
 
